@@ -1,8 +1,9 @@
-#include <iostream>
+#include "bits/stdc++.h"
+#include "usi.cpp"
 using namespace std;
+
 int main()
 {
-	int a;
-	cin >> a;
-	cout << a + 1 << endl;
+    
+    reply_usi();
 }

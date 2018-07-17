@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C311B6FE20FC305F00A76556 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C311B6FD20FC305F00A76556 /* main.cpp */; };
+		C38ED9F320FCC9E700B7B90B /* usi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38ED9F220FCC9E600B7B90B /* usi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		C311B6FA20FC305F00A76556 /* shogiai */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shogiai; sourceTree = BUILT_PRODUCTS_DIR; };
 		C311B6FD20FC305F00A76556 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C38ED9F220FCC9E600B7B90B /* usi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usi.cpp; sourceTree = "<group>"; };
+		C38ED9F420FCCA2D00B7B90B /* info_engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = info_engine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		C311B6FC20FC305F00A76556 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C38ED9F220FCC9E600B7B90B /* usi.cpp */,
 				C311B6FD20FC305F00A76556 /* main.cpp */,
+				C38ED9F420FCCA2D00B7B90B /* info_engine.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C311B6FE20FC305F00A76556 /* main.cpp in Sources */,
+				C38ED9F320FCC9E700B7B90B /* usi.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
