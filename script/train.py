@@ -25,7 +25,7 @@ args = parser.parse_args()
 
 time_start = datetime.now()
 time_now = datetime.now()
-name_log = re.sub('\.', time_start.strftime('%Y/%m/%d/%H/%M/%S') + '.', args.log)
+name_log = re.sub('\.', time_start.strftime('%Y_%m_%d_%H_%M_%S') + '.', args.log)
 log = {'epoch': 0, 'iteration': 0, 'loss': 0, 'accuracy': 0}
 with open(name_log, 'a+') as log_f:
     log_f.writelines('{\n\t')
