@@ -1,0 +1,5 @@
+{
+    "20180101010101": {"epoch": 1, "iteration": 1, "loss": 10, "accuracy": 20},
+    "20180101010102": {"epoch": 1, "iteration": 1, "loss": 20, "accuracy": 50},
+    "20180101010103": {"epoch": 1, "iteration": 1, "loss": 100, "accuracy": 100}
+}

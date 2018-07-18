@@ -25,10 +25,14 @@ args = parser.parse_args()
 
 time_start = datetime.now()
 time_now = datetime.now()
-name_log = re.sub('\.', time_start.strftime('%Y_%m_%d_%H_%M_%S') + '.', args.log)
 log = {'epoch': 0, 'iteration': 0, 'loss': 0, 'accuracy': 0}
-with open(name_log, 'a+') as log_f:
-    log_f.writelines('{\n\t')
+with open(args.log, 'a+') as log_f:
+    tmp_f = log_f.read()
+    tmp_ind = tmp_f.rfind('}')
+    if not tmp_ind == -1:
+        tmp_f[tmp_ind] = ''
+
+    log_f.write(tmp_f)
 
 model = policynet.Policynet()
 model.to_gpu()
@@ -126,13 +130,11 @@ for i in range(args.epoch):
             log['loss'] = sum_loss / ite
             log['accuracy'] = func.accuracy(y, x).data
             time_now = datetime.now()
-            with open(name_log, 'a+') as log_f:
-                log_f.writelines(time_now.strftime('"%Y_%m_%d_%H_%M_%S": ') + log)
+            with open(args.log, 'a+') as log_f:
+                log_f.writelines(time_now.strftime('"%Y%m%d%H%M%S": ') + log)
 
 
-            print(time_now.strftime('%Y/%m/&d %H/%M/&S    ') + 'epoch: {}, iter: {}, loss: {}, accuracy: {}'.format(
-                log['epoch'], log['iteration'],
-                log['loss'], log['accuracy']))
+            print(time_now.strftime('%Y/%m/&d %H/%M/&S    ') + 'epoch: {}, iter: {}, loss: {}, accuracy: {}'.format(log['epoch'], log['iteration'], log['loss'], log['accuracy']))
             ite = 0
             sum_loss = 0
 
@@ -149,8 +151,8 @@ for i in range(args.epoch):
     log['loss'] = sum_loss_epoch / ite_epoch
     log['accuracy'] = sum_test_acc / ite_test
     time_now = datetime.now()
-    with open(name_log, 'a+') as log_f:
-         log_f.writelines(time_now.strftime('"%Y_%m_%d_%H_%M_%S": ') + log)
+    with open(args.log, 'a+') as log_f:
+         log_f.writelines(time_now.strftime('"%Y%m%d%H%M%S": ') + log)
 
 
     print(time_now.strftime('%Y/%m/&d %H/%M/&S    ') + 'epoch: {}, iter: {}, loss: {}, accuracy: {}'.format(log['epoch'], log['iteration'],log['loss'], log['accuracy']))
@@ -162,7 +164,7 @@ print('Saved model')
 serializers.save_npz(args.state, optimizer)
 print('Saved optimizer state')
 
-with open(name_log, 'a+') as log_f:
+with open(args.log, 'a+') as log_f:
     log_f.writelines('\n}')
 
 print('Finished!!')
