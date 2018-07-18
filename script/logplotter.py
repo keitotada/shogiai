@@ -1,20 +1,32 @@
-import argparse, re, matplotlib.pyplot as plt, os, json, numpy as np
+import argparse, matplotlib.pyplot as plt, os, json
+
 
 def plotter(filename):
     if os.path.exists(filename):
         with open(filename) as tmp_f:
             data_log = json.load(tmp_f)
-            date_train = data_log.key().sort()
-            result_train = {'loss': [], 'accuracy': []}
-            for i in date_train:
-                result_train['loss'].append(data_log[i]['loss'])
-                result_train['acuracy'].append(data_log[i]['accuracy'])
+            print(data_log)
+            ite_train = {}
+            for i in data_log.values():
+                print(i)
+                ite_train[i['iteration']] = (int(i['loss']), int(i['accuracy']))
 
-            plt.hold(True)
-            x = np.linspace(0, len(data_train), 1)
-            plt.plot(x, result_train['loss'], 'loss')
-            plt.plot(x, result_train['accuracy'], 'loss')
+            print(ite_train)
+            ite = sorted(ite_train.items())
+            print(ite)
+            result_train = [[], [], []]
+            for i in ite:
+                result_train[0].append(i[0])
+                result_train[1].append(i[1][0])
+                result_train[2].append(i[1][1])
+
+            print(result_train)
+            x = result_train[0]
+            plt.plot(x, result_train[1], label='loss')
+            plt.plot(x, result_train[2], label='accuracy')
+            plt.legend()
             plt.show()
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('log', type=str)
