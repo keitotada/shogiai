@@ -1,9 +1,9 @@
 #include "bits/stdc++.h"
-#include "usi.cpp"
-using namespace std;
 
-int main()
+
+
+using namespace std;
+int main(int argc, const char * argv[])
 {
-    
-    reply_usi();
+    printf("a");
 }

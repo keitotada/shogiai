@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C311B6FE20FC305F00A76556 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C311B6FD20FC305F00A76556 /* main.cpp */; };
-		C38ED9F320FCC9E700B7B90B /* usi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38ED9F220FCC9E600B7B90B /* usi.cpp */; };
+		C39D4C3620FF89F500AC5B01 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C39D4C3520FF89F500AC5B01 /* main.cpp */; };
+		C39D4C4E20FF8A4F00AC5B01 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C39D4C4520FF8A4E00AC5B01 /* Makefile */; };
+		C39D4C4F20FF8A4F00AC5B01 /* usi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C39D4C4720FF8A4E00AC5B01 /* usi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C311B6F820FC305F00A76556 /* CopyFiles */ = {
+		C39D4C3020FF89F500AC5B01 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +25,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C311B6FA20FC305F00A76556 /* shogiai */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shogiai; sourceTree = BUILT_PRODUCTS_DIR; };
-		C311B6FD20FC305F00A76556 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		C38ED9F220FCC9E600B7B90B /* usi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usi.cpp; sourceTree = "<group>"; };
-		C38ED9F420FCCA2D00B7B90B /* info_engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = info_engine.h; sourceTree = "<group>"; };
+		C39D4C3220FF89F500AC5B01 /* shogiai */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shogiai; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39D4C3520FF89F500AC5B01 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C39D4C3C20FF8A2600AC5B01 /* script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = script; sourceTree = "<group>"; };
+		C39D4C3D20FF8A2600AC5B01 /* .git */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .git; sourceTree = "<group>"; };
+		C39D4C3E20FF8A2600AC5B01 /* .idea */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .idea; sourceTree = "<group>"; };
+		C39D4C3F20FF8A2600AC5B01 /* Debug */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Debug; sourceTree = "<group>"; };
+		C39D4C4020FF8A2600AC5B01 /* .vs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .vs; sourceTree = "<group>"; };
+		C39D4C4120FF8A2600AC5B01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C39D4C4220FF8A2600AC5B01 /* shogiai.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = shogiai.sln; sourceTree = "<group>"; };
+		C39D4C4320FF8A2700AC5B01 /* Release */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Release; sourceTree = "<group>"; };
+		C39D4C4420FF8A4E00AC5B01 /* .vs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .vs; sourceTree = "<group>"; };
+		C39D4C4520FF8A4E00AC5B01 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		C39D4C4620FF8A4E00AC5B01 /* Release */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Release; sourceTree = "<group>"; };
+		C39D4C4720FF8A4E00AC5B01 /* usi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usi.cpp; sourceTree = "<group>"; };
+		C39D4C4820FF8A4E00AC5B01 /* shogiai.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = shogiai.vcxproj; sourceTree = "<group>"; };
+		C39D4C4920FF8A4E00AC5B01 /* shogiai.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = shogiai.vcxproj.filters; sourceTree = "<group>"; };
+		C39D4C4A20FF8A4E00AC5B01 /* shogiai.vcxproj.user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = shogiai.vcxproj.user; sourceTree = "<group>"; };
+		C39D4C4B20FF8A4E00AC5B01 /* bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bits; sourceTree = "<group>"; };
+		C39D4C4C20FF8A4E00AC5B01 /* Debug */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Debug; sourceTree = "<group>"; };
+		C39D4C4D20FF8A4F00AC5B01 /* info_engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = info_engine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C311B6F720FC305F00A76556 /* Frameworks */ = {
+		C39D4C2F20FF89F500AC5B01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,28 +58,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C311B6F120FC305F00A76556 = {
+		C39D4C2920FF89F500AC5B01 = {
 			isa = PBXGroup;
 			children = (
-				C311B6FC20FC305F00A76556 /* src */,
-				C311B6FB20FC305F00A76556 /* Products */,
+				C39D4C3D20FF8A2600AC5B01 /* .git */,
+				C39D4C3E20FF8A2600AC5B01 /* .idea */,
+				C39D4C4020FF8A2600AC5B01 /* .vs */,
+				C39D4C3F20FF8A2600AC5B01 /* Debug */,
+				C39D4C4120FF8A2600AC5B01 /* README.md */,
+				C39D4C4320FF8A2700AC5B01 /* Release */,
+				C39D4C3C20FF8A2600AC5B01 /* script */,
+				C39D4C4220FF8A2600AC5B01 /* shogiai.sln */,
+				C39D4C3420FF89F500AC5B01 /* src */,
+				C39D4C3320FF89F500AC5B01 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C311B6FB20FC305F00A76556 /* Products */ = {
+		C39D4C3320FF89F500AC5B01 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C311B6FA20FC305F00A76556 /* shogiai */,
+				C39D4C3220FF89F500AC5B01 /* shogiai */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C311B6FC20FC305F00A76556 /* src */ = {
+		C39D4C3420FF89F500AC5B01 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				C38ED9F220FCC9E600B7B90B /* usi.cpp */,
-				C311B6FD20FC305F00A76556 /* main.cpp */,
-				C38ED9F420FCCA2D00B7B90B /* info_engine.h */,
+				C39D4C4420FF8A4E00AC5B01 /* .vs */,
+				C39D4C4B20FF8A4E00AC5B01 /* bits */,
+				C39D4C4C20FF8A4E00AC5B01 /* Debug */,
+				C39D4C4D20FF8A4F00AC5B01 /* info_engine.h */,
+				C39D4C4520FF8A4E00AC5B01 /* Makefile */,
+				C39D4C4620FF8A4E00AC5B01 /* Release */,
+				C39D4C4820FF8A4E00AC5B01 /* shogiai.vcxproj */,
+				C39D4C4920FF8A4E00AC5B01 /* shogiai.vcxproj.filters */,
+				C39D4C4A20FF8A4E00AC5B01 /* shogiai.vcxproj.user */,
+				C39D4C4720FF8A4E00AC5B01 /* usi.cpp */,
+				C39D4C3520FF89F500AC5B01 /* main.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -70,13 +103,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C311B6F920FC305F00A76556 /* shogiai */ = {
+		C39D4C3120FF89F500AC5B01 /* shogiai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C311B70120FC305F00A76556 /* Build configuration list for PBXNativeTarget "shogiai" */;
+			buildConfigurationList = C39D4C3920FF89F500AC5B01 /* Build configuration list for PBXNativeTarget "shogiai" */;
 			buildPhases = (
-				C311B6F620FC305F00A76556 /* Sources */,
-				C311B6F720FC305F00A76556 /* Frameworks */,
-				C311B6F820FC305F00A76556 /* CopyFiles */,
+				C39D4C2E20FF89F500AC5B01 /* Sources */,
+				C39D4C2F20FF89F500AC5B01 /* Frameworks */,
+				C39D4C3020FF89F500AC5B01 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -84,54 +117,55 @@
 			);
 			name = shogiai;
 			productName = shogiai;
-			productReference = C311B6FA20FC305F00A76556 /* shogiai */;
+			productReference = C39D4C3220FF89F500AC5B01 /* shogiai */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C311B6F220FC305F00A76556 /* Project object */ = {
+		C39D4C2A20FF89F500AC5B01 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = keitotada;
+				ORGANIZATIONNAME = "Keito Tada";
 				TargetAttributes = {
-					C311B6F920FC305F00A76556 = {
+					C39D4C3120FF89F500AC5B01 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = C311B6F520FC305F00A76556 /* Build configuration list for PBXProject "shogiai" */;
+			buildConfigurationList = C39D4C2D20FF89F500AC5B01 /* Build configuration list for PBXProject "shogiai" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C311B6F120FC305F00A76556;
-			productRefGroup = C311B6FB20FC305F00A76556 /* Products */;
+			mainGroup = C39D4C2920FF89F500AC5B01;
+			productRefGroup = C39D4C3320FF89F500AC5B01 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C311B6F920FC305F00A76556 /* shogiai */,
+				C39D4C3120FF89F500AC5B01 /* shogiai */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C311B6F620FC305F00A76556 /* Sources */ = {
+		C39D4C2E20FF89F500AC5B01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C311B6FE20FC305F00A76556 /* main.cpp in Sources */,
-				C38ED9F320FCC9E700B7B90B /* usi.cpp in Sources */,
+				C39D4C4F20FF8A4F00AC5B01 /* usi.cpp in Sources */,
+				C39D4C4E20FF8A4F00AC5B01 /* Makefile in Sources */,
+				C39D4C3620FF89F500AC5B01 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C311B6FF20FC305F00A76556 /* Debug */ = {
+		C39D4C3720FF89F500AC5B01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		C311B70020FC305F00A76556 /* Release */ = {
+		C39D4C3820FF89F500AC5B01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +274,7 @@
 			};
 			name = Release;
 		};
-		C311B70220FC305F00A76556 /* Debug */ = {
+		C39D4C3A20FF89F500AC5B01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -248,7 +282,7 @@
 			};
 			name = Debug;
 		};
-		C311B70320FC305F00A76556 /* Release */ = {
+		C39D4C3B20FF89F500AC5B01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -259,25 +293,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C311B6F520FC305F00A76556 /* Build configuration list for PBXProject "shogiai" */ = {
+		C39D4C2D20FF89F500AC5B01 /* Build configuration list for PBXProject "shogiai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C311B6FF20FC305F00A76556 /* Debug */,
-				C311B70020FC305F00A76556 /* Release */,
+				C39D4C3720FF89F500AC5B01 /* Debug */,
+				C39D4C3820FF89F500AC5B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C311B70120FC305F00A76556 /* Build configuration list for PBXNativeTarget "shogiai" */ = {
+		C39D4C3920FF89F500AC5B01 /* Build configuration list for PBXNativeTarget "shogiai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C311B70220FC305F00A76556 /* Debug */,
-				C311B70320FC305F00A76556 /* Release */,
+				C39D4C3A20FF89F500AC5B01 /* Debug */,
+				C39D4C3B20FF89F500AC5B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C311B6F220FC305F00A76556 /* Project object */;
+	rootObject = C39D4C2A20FF89F500AC5B01 /* Project object */;
 }

@@ -3,7 +3,5 @@ using namespace std;
 
 void reply_usi()
 {
-    
-    
-    
+    printf("a");
 }
